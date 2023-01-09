@@ -1,0 +1,61 @@
+/* ---------- general styling ---------- */
+html,
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    color: #1e1e1e;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------- header styling ---------- */
+
+header {
+    background-color: rgb(38, 76, 89);
+    color: #f1f1f1;
+    padding: 60px;
+}
+
+/* ---------- footer styling ---------- */
+
+footer {
+    background-color: rgb(172, 198, 201);
+    text-align: center;
+    padding: 30px 60px;
+}
+
+footer a {
+    color: rgb(38, 76, 89);
+}
+
+/* ---------- grid styling ---------- */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.grid-item article {
+    padding: 60px;
+}
+
+/* ---------- short-description styling ---------- */
+
+#short-description {
+    font-size: 1.4em;
+}
+
+/* ---------- ingredients styling ---------- */
+
+#ingredients {
+    background-color: #f4f4f4;
+}
