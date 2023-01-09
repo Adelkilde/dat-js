@@ -22,7 +22,7 @@ img {
 header {
     background-color: rgb(38, 76, 89);
     color: #f1f1f1;
-    padding: 60px;
+    padding: 40px 60px;
 }
 
 /* ---------- footer styling ---------- */
@@ -30,7 +30,7 @@ header {
 footer {
     background-color: rgb(172, 198, 201);
     text-align: center;
-    padding: 30px 60px;
+    padding: 20px 60px;
 }
 
 footer a {
@@ -51,7 +51,7 @@ footer a {
 /* ---------- short-description styling ---------- */
 
 #short-description {
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 /* ---------- ingredients styling ---------- */
