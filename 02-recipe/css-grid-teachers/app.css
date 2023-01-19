@@ -1,0 +1,109 @@
+/* ---------- root variables ---------- */
+:root {
+    --green: rgb(38, 76, 89);
+    --light-green: rgb(172, 198, 201);
+    --light-grey: #f1f1f4;
+    --text-color-light: #f1f1f1;
+    --text-color-dark: #333;
+    --text-color-danger: rgb(152, 58, 58);
+    --white: #fff;
+    --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ---------- general styling ---------- */
+html,
+body {
+    color: var(--text-color-dark);
+    font-family: var(--font-family);
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: var(--light-green);
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+h3 {
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+a {
+    color: var(--green);
+}
+
+/* ---------- main (page) styling ---------- */
+main {
+    padding: 82px 0 0 0;
+    min-height: calc(100vh - 167px);
+}
+
+/* ---------- header styling ---------- */
+header {
+    background-color: var(--green);
+    color: var(--text-color-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    text-align: center;
+}
+
+/* ---------- grid container styling ---------- */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 1em;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1200px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.grid-container > article {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    padding: 1.5em;
+    background-color: var(--white);
+    transition: 0.5s;
+    animation: fadeIn 0.5s;
+}
+
+.grid-container > article:hover {
+    box-shadow: 0 8px 16px 0 var(--green);
+}
+
+.grid-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid-container p {
+    margin: 0.3em 0;
+}
