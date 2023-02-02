@@ -1,0 +1,34 @@
+{
+    "users": {
+        "-NNBOtuFaCLHSY-IzmCt": {
+            "image": "https://kea.dk/slir/w360-c1x1/images/user-profile/chefer/larb.jpg",
+            "mail": "larb@kea.dk",
+            "name": "Lars Bogetoft",
+            "title": "Head of Education"
+        },
+        "-NNBQSO5gFb-4xB7liug": {
+            "image": "https://share.cederdorff.com/images/mago.jpg",
+            "mail": "mago@kea.dk",
+            "name": "Magdalena “Lenka” Otap",
+            "title": "Lecturer"
+        },
+        "-NNBmwOIWSbJAD6ihcuZ": {
+            "image": "https://share.cederdorff.com/images/petl.jpg",
+            "mail": "petl@kea.dk",
+            "name": "Peter Lind",
+            "title": "Senior Lecturer"
+        },
+        "-NNBno2o8g0Bmp5cK2Vg": {
+            "image": "https://cyberhub.dk/wp-content/uploads/2021/08/mh.jpg",
+            "mail": "mhes@kea.dk",
+            "name": "Merete Hess",
+            "title": "Head of Education"
+        },
+        "fTs84KRoYw5pRZEWCq2Z": {
+            "image": "https://share.cederdorff.com/images/race.jpg",
+            "mail": "race@kea.dk",
+            "name": "Rasmus Cederdorff",
+            "title": "Senior Lecturer"
+        }
+    }
+}
