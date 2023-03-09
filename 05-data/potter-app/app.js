@@ -1,20 +1,23 @@
 "use strict";
+// ============ GLOBAL VARIABELS ============ //
+let characters = [];
+
+// ============ LOAD & INIT APP ============ //
 
 window.addEventListener("load", initApp);
 
-function initApp() {
-    readCharacters();
+async function initApp() {
+    characters = await readCharacters();
+    displayCharacters(characters);
 }
 
-// ============ GLOBAL VARIABELS ============ //
-let characters = [];
 // ============ READ ============ //
 // Read (GET) all users from Firebase (Database) using REST API
 async function readCharacters() {
     const response = await fetch("https://raw.githubusercontent.com/cederdorff/dat-js/main/data/potter.json");
-    characters = await response.json();
-    console.log(characters);
-    displayCharacters(characters);
+    const data = await response.json();
+    console.log(data);
+    return data;
 }
 
 // Create HTML and display all users from given list
@@ -31,5 +34,16 @@ function displayCharacters(characterList) {
             </article>
         `
         );
+        document
+            .querySelector("#characters article:last-child")
+            .addEventListener("click", () => showCharacter(character));
     }
+}
+
+function showCharacter(character) {
+    console.log(character);
+    document.querySelector("#dialog-title").textContent = character.name;
+    document.querySelector("#dialog-house").textContent = character.house;
+    document.querySelector("#dialog-birth-date").textContent = character.dateOfBirth;
+    document.querySelector("#dialog-character").showModal();
 }
