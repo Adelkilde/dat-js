@@ -22,6 +22,7 @@ html {
 
 body {
     margin: 0;
+    font-size: 1.2em;
 }
 
 h1 {
@@ -63,6 +64,8 @@ header {
     z-index: 9999;
 }
 
+/* ---------- footer styling ---------- */
+
 footer {
     background-color: var(--green);
     color: var(--text-color-light);
@@ -70,13 +73,11 @@ footer {
     text-align: center;
 }
 
-/* ---------- page styling ---------- */
+/* ---------- main page styling ---------- */
 main {
-    /*min heigh is screen heigh minus height of tab and top bar */
-    min-height: calc(100vh - 110px);
     background: var(--light-grey);
     animation: fadeIn 0.4s;
-    padding: 114px 0 0;
+    padding: 137px 0 0;
 }
 
 /* ---------- animations ---------- */
