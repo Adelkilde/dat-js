@@ -51,16 +51,23 @@ img {
     height: auto;
 }
 
-/* ---------- topbar styling ---------- */
+/* ---------- header styling ---------- */
 header {
     background-color: var(--green);
     color: var(--text-color-light);
-    padding: 13.5px;
+    padding: 1em;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
+}
+
+footer {
+    background-color: var(--green);
+    color: var(--text-color-light);
+    padding: 1em;
+    text-align: center;
 }
 
 /* ---------- page styling ---------- */
@@ -69,7 +76,7 @@ main {
     min-height: calc(100vh - 110px);
     background: var(--light-grey);
     animation: fadeIn 0.4s;
-    padding: 108px 0 0;
+    padding: 114px 0 0;
 }
 
 /* ---------- animations ---------- */
