@@ -10,7 +10,7 @@ async function initApp() {
 }
 
 // ============ READ ============ //
-// Read (GET) all users from Firebase (Database) using REST API
+// Read (GET) characters from json file located on GitHub
 async function loadCharacters() {
     const response = await fetch("https://raw.githubusercontent.com/cederdorff/dat-js/main/data/potter.json");
     const data = await response.json();
@@ -44,8 +44,32 @@ function displayCharacter(character) {
 
 function showCharacterModal(character) {
     console.log(character);
+    document.querySelector("#dialog-image").src = character.image;
     document.querySelector("#dialog-title").textContent = character.name;
     document.querySelector("#dialog-house").textContent = character.house;
+
+    let description = "";
+    if (character.hogwartsStaff && character.alive) {
+        description = `${character.name} is employed at Hogwarts.`;
+    } else if (character.hogwartsStaff && !character.alive) {
+        description = `${character.name} was employed at Hogwarts but is no longer alive.`;
+    } else if (character.hogwartsStudent && character.alive) {
+        description = `${character.name} is a student at Hogwarts.`;
+    } else if (character.hogwartsStudent && !character.alive) {
+        description = `${character.name} was a student at Hogwarts but is no longer alive.`;
+    }
+
+    document.querySelector("#dialog-character-description").textContent = description;
+
+    document.querySelector("#dialog-gender").textContent = character.gender;
     document.querySelector("#dialog-birth-date").textContent = character.dateOfBirth;
+    document.querySelector("#dialog-eye-color").textContent = character.eyeColour;
+    document.querySelector("#dialog-hair-color").textContent = character.hairColour;
+    document.querySelector("#dialog-ancestry").textContent = character.ancestry;
+    document.querySelector("#dialog-species").textContent = character.species;
+
+    document.querySelector("#dialog-name").textContent = character.name;
+    document.querySelector("#dialog-actor-name").textContent = character.actor;
+
     document.querySelector("#dialog-character").showModal();
 }
