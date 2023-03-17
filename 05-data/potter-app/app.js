@@ -5,13 +5,13 @@
 window.addEventListener("load", initApp);
 
 async function initApp() {
-    const characters = await loadCharacters();
-    displayCharacters(characters);
+    const characters = await getCharacters();
+    showCharacters(characters);
 }
 
 // ============ READ ============ //
 // Read (GET) characters from json file located on GitHub
-async function loadCharacters() {
+async function getCharacters() {
     const response = await fetch("https://raw.githubusercontent.com/cederdorff/dat-js/main/data/potter.json");
     const data = await response.json();
     console.log(data);
@@ -19,14 +19,14 @@ async function loadCharacters() {
 }
 
 // Create HTML and display all users from given list
-function displayCharacters(characterList) {
+function showCharacters(characterList) {
     //loop through all users and create an article with content for each
     for (const character of characterList) {
-        displayCharacter(character);
+        showCharacter(character);
     }
 }
 
-function displayCharacter(character) {
+function showCharacter(character) {
     document.querySelector("#characters").insertAdjacentHTML(
         "beforeend",
         /*html*/ `
