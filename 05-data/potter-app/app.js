@@ -37,9 +37,15 @@ function displayCharacter(character) {
             </article>
         `
     );
-    document
-        .querySelector("#characters article:last-child")
-        .addEventListener("click", () => showCharacterModal(character));
+    // document
+    //     .querySelector("#characters article:last-child")
+    //     .addEventListener("click", () => showCharacterModal(character));
+
+    document.querySelector("#characters article:last-child").addEventListener("click", characterClicked);
+
+    function characterClicked() {
+        showCharacterModal(character);
+    }
 }
 
 function showCharacterModal(character) {
@@ -48,17 +54,8 @@ function showCharacterModal(character) {
     document.querySelector("#dialog-title").textContent = character.name;
     document.querySelector("#dialog-house").textContent = character.house;
 
-    let description = "";
-    if (character.hogwartsStaff && character.alive) {
-        description = `${character.name} is employed at Hogwarts.`;
-    } else if (character.hogwartsStaff && !character.alive) {
-        description = `${character.name} was employed at Hogwarts but is no longer alive.`;
-    } else if (character.hogwartsStudent && character.alive) {
-        description = `${character.name} is a student at Hogwarts.`;
-    } else if (character.hogwartsStudent && !character.alive) {
-        description = `${character.name} was a student at Hogwarts but is no longer alive.`;
-    }
-
+    // description
+    let description = generateDescription(character);
     document.querySelector("#dialog-character-description").textContent = description;
 
     document.querySelector("#dialog-gender").textContent = character.gender;
@@ -71,5 +68,20 @@ function showCharacterModal(character) {
     document.querySelector("#dialog-name").textContent = character.name;
     document.querySelector("#dialog-actor-name").textContent = character.actor;
 
+    // show dialog
     document.querySelector("#dialog-character").showModal();
+}
+
+function generateDescription(character) {
+    let description = "";
+    if (character.hogwartsStaff && character.alive) {
+        description = `${character.name} is employed at Hogwarts.`;
+    } else if (character.hogwartsStaff && !character.alive) {
+        description = `${character.name} was employed at Hogwarts but is no longer alive.`;
+    } else if (character.hogwartsStudent && character.alive) {
+        description = `${character.name} is a student at Hogwarts.`;
+    } else if (character.hogwartsStudent && !character.alive) {
+        description = `${character.name} was a student at Hogwarts but is no longer alive.`;
+    }
+    return description;
 }
