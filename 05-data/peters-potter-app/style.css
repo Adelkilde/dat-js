@@ -60,6 +60,10 @@ body {
     box-shadow: #aaa 10px 10px 25px;
 }
 
+.hide {
+    display: none;
+}
+
 #details figure,
 #details h1 {
     margin: 0;
