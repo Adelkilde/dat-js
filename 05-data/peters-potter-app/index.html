@@ -8,18 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <dialog id="details" open>
+    <dialog id="details" open data-theme="slytherin">
         <!-- TODO: Theme by house -->
         <h1>Lucius Malfoy</h1>
         <figure>
             <img src="http://hp-api.herokuapp.com/images/lucius.jpg" alt="portrait of Lucius Malfoy">
-            <figcaption>portrayed by actor Jaxon Isaacs</figcaption>
+            <figcaption>portrayed by actor Jason Isaacs</figcaption>
         </figure>
-        <img src="images/housecrest-slytherin.png" alt="Slytherin house crest">
-        <h2>Slytherin</h2>
-        <p>not a student at Hogwarts</p>
-        <div>human | male | pure-blood</div>
-        <div>wand
+
+        <img id="details-house-crest" src="images/housecrest-slytherin.png" alt="Slytherin house crest">
+
+        <p id="details-house-name">Slytherin</p>
+        <p id="details-hogwarts-status">not a student at Hogwarts</p>
+        
+        <div id="details-species">human | male | pure-blood</div>
+        <div id="details-wand-image">
+            <img src="images/wand.png" alt="wand">
+        </div>
+        <div id="details-wand">
             <dl>
                 <dt>type:</dt>
                 <dd>elm</dd>
@@ -29,7 +35,7 @@
                 <dd>18"</dd>
             </dl>
         </div>
-        <p>Birthday: 1954 age: 69 (approx.)</p>
+        <p id="details-birthday">Birthday: 1954 age: 69 (approx.)</p>
         
 
 
