@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Potter App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <dialog id="details" open data-theme="slytherin">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Harry Potter Wizarding Universe Characters</header>
+
+    <dialog data-theme="slytherin">
+      <div id="details">
         <!-- TODO: Theme by house -->
         <h1 id="details-character-name">XXX</h1>
         <figure id="details-image">
-            <img src="#" alt="portrait of ...">
-            <figcaption>portrayed by actor ...</figcaption>
+          <img src="#" alt="portrait of ..." />
+          <figcaption>portrayed by actor ...</figcaption>
         </figure>
 
-        <img id="details-house-crest" src="#" alt="... house crest">
+        <img id="details-house-crest" src="#" alt="... house crest" />
 
         <p id="details-house-name">HOUSE</p>
-        <p id="details-hogwarts-status"><span class="not">not</span> a <span class="teacher">teacher</span><span class="student">student</span> at Hogwarts</p>
-        
+        <p id="details-hogwarts-status">
+          <span class="not">not</span> a <span class="teacher">teacher</span><span class="student">student</span> at Hogwarts
+        </p>
+
         <div id="details-species">xx | xx | xx</div>
         <div id="details-wand-image">
-            <img src="images/wand.png" alt="wand">
+          <img src="images/wand.png" alt="wand" />
         </div>
         <div id="details-wand">
-            <dl>
-                <dt>type:</dt>
-                <dd id="details-wand-type">xx</dd>
-                <dt>core:</dt>
-                <dd id="details-wand-core">xx</dd>
-                <dt>length:</dt>
-                <dd id="details-wand-length">xx"</dd>
-            </dl>
+          <dl>
+            <dt>type:</dt>
+            <dd id="details-wand-type">xx</dd>
+            <dt>core:</dt>
+            <dd id="details-wand-core">xx</dd>
+            <dt>length:</dt>
+            <dd id="details-wand-length">xx"</dd>
+          </dl>
         </div>
-        <p id="details-birthday">Birthday: <span class="bday">xx</span> age: <span class="age">xx</span> <span class="approx">(approx.)</span></p>
-        
-
-
+        <p id="details-birthday">
+          Birthday: <span class="bday">xx</span> age:
+          <span class="age">xx</span> <span class="approx">(approx.)</span>
+        </p>
+      </div>
     </dialog>
 
-    <footer>
-        &copy; 2023 design by petl
-    </footer>
+    <main id="character-grid">
+      <!--<article class="character" data-theme="slytherin">
+            <img src="http://hp-api.herokuapp.com/images/lucius.jpg" alt="portrait of Lucius Malfoy">
+            <h2>Lucius Malfoy</h2>
+            <p>Slytherin</p>
+        </article> -->
+    </main>
+
+    <footer>&copy; 2023 design by petl</footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

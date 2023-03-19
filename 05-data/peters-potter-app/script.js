@@ -82,4 +82,20 @@ const lucius = {
 
   }
 
+  function displayCharacter(character) {
+    const grid = document.querySelector("#character-grid");
+    grid.insertAdjacentHTML("beforeend", getCharacterHTML(character));
+  }
+
+  function getCharacterHTML(character) {
+    const html = `<article class="character" data-theme="${character.house.toLowerCase()}">
+        <img src="${character.image}" alt="portrait of ${character.name}">
+        <h2>${character.name}</h2>
+        <p>${character.house}</p>
+    </article>`;
+
+    return html;
+  }
+
   displayDetails(lucius);
+  displayCharacter(lucius);

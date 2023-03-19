@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     --gryffindor-dark-red: #740001;
     --gryffindor-light-red: #ae0001;
     --gryffindor-dark-yellow: #d3a625;
@@ -48,8 +49,39 @@ body {
     --fg-col-light: var(--hufflepuff-light-brown);
 }
 
+header {
+    background-color: bisque;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    border-bottom: 1px solid #666;
+}
+
+main {
+    margin-block-start: 1em; 
+    margin-block-end: 1em; 
+    min-height: calc(80vh - 2em);
+}
+
+footer {
+    background-color: blanchedalmond;
+    border-top: 1px solid #666;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+dialog {
+    border: none;
+}
+
 #details {
     /*min-width: 70vw;*/
+    padding: 1rem;
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 3em 3em 2fr;   
@@ -135,4 +167,33 @@ body {
 #details-birthday {
     grid-column: 3 / span 2;
     font-size: 1.2rem;
+}
+
+/* Character grid */
+#character-grid {
+    
+margin-left: 15vw;
+
+}
+
+#character-grid .character {
+    max-width: 70vw;
+    border: 2px solid black;
+    padding: 3px;
+    display: grid;
+    grid-template-columns: 3rem 10rem 5rem;
+    align-items: center;
+    gap: 1rem;
+    margin-block-end: 1rem;
+    background-color: var(--bg-col-light);
+    color: var(--fg-col-light);
+}
+
+#character-grid .character img {
+    width: 100%;
+}
+
+#character-grid .character h2,
+#character-grid .character p {
+    margin: 0;
 }
