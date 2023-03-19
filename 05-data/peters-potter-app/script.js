@@ -4,15 +4,7 @@ window.addEventListener("load", start);
 
 async function start() {
   const characters = await loadJSON();
-  const harry = characters.at(0);
-  displayCharacter(harry);
-  const ron = characters.at(2);
-  displayCharacter(ron);
-  const draco = characters.at(3);
-  displayCharacter(draco);
-
-  displayDetails(draco);
-  document.querySelector("dialog").showModal();
+  displayCharacterList(characters);
 }
 
 
@@ -23,6 +15,10 @@ async function loadJSON() {
   return data;
 }
 
+
+function displayCharacterList(characters) {
+  characters.forEach( displayCharacter );
+}
 
 function displayDetails(character) {
   // name, image, actor
@@ -107,6 +103,3 @@ function getCharacterHTML(character) {
 
   return html;
 }
-
-//  displayDetails(lucius);
-//  displayCharacter(lucius);

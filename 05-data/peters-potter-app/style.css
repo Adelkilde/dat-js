@@ -181,7 +181,7 @@ margin-left: 15vw;
     border: 2px solid black;
     padding: 3px;
     display: grid;
-    grid-template-columns: 3rem 10rem 5rem;
+    grid-template-columns: 3rem 20rem 5rem;
     align-items: center;
     gap: 1rem;
     margin-block-end: 1rem;
