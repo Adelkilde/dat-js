@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    --gryffindor-dark-red: #740001;
+    --gryffindor-light-red: #ae0001;
+    --gryffindor-dark-yellow: #d3a625;
+    --gryffindor-light-yellow: #eeba30;
+
+    --slytherin-dark-green: #1a472a;
+    --slytherin-light-green: #2a623a;
+    --slytherin-dark-silver: #5d5d5d;
+    --slytherin-light-silver: #aaaaaa;
+
+    --ravenclaw-dark-blue: #0e1a40;
+    --ravenclaw-light-blue: #222f5b;
+    --ravenclaw-dark-gold: #946b2d;
+    --ravenclaw-light-grey: #bebebe;
+
+    --hufflepuff-dark-canary: #ecb939;
+    --hufflepuff-light-canary: #f0c75e;
+    --hufflepuff-dark-brown: #372e29;
+    --hufflepuff-light-brown: #726255;
+}
+
+[data-theme="gryffindor"] {
+    --bg-col-dark: var(--gryffindor-dark-red);
+    --bg-col-light: var(--gryffindor-light-red);
+    --fg-col-dark: var(--gryffindor-dark-yellow);
+    --fg-col-light: var(--gryffindor-light-yellow);
+}
+
+[data-theme="slytherin"] {
+    --bg-col-dark: var(--slytherin-dark-green);
+    --bg-col-light: var(--slytherin-light-green);
+    --fg-col-dark: var(--slytherin-dark-silver);
+    --fg-col-light: var(--slytherin-light-silver);
+}
+
+[data-theme="ravenclaw"] {
+    --bg-col-dark: var(--ravenclaw-dark-blue);
+    --bg-col-light: var(--ravenclaw-light-blue);
+    --fg-col-dark: var(--ravenclaw-dark-gold);
+    --fg-col-light: var(--ravenclaw-light-grey);
+}
+
+[data-theme="hufflepuff"] {
+    --bg-col-dark: var(--hufflepuff-dark-canary);
+    --bg-col-light: var(--hufflepuff-light-canary);
+    --fg-col-dark: var(--hufflepuff-dark-brown);
+    --fg-col-light: var(--hufflepuff-light-brown);
+}
+
+header {
+    background-color: bisque;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300%;
+    border-bottom: 1px solid #666;
+}
+
+main {
+    margin-block-start: 1em; 
+    margin-block-end: 1em; 
+    min-height: calc(80vh - 2em);
+}
+
+footer {
+    background-color: blanchedalmond;
+    border-top: 1px solid #666;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+dialog {
+    border: none;
+}
+
+#details {
+    /*min-width: 70vw;*/
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 3em 3em 2fr;   
+    background: linear-gradient(45deg, var(--bg-col-dark) 0%, var(--bg-col-light) 100%);
+    color: var(--fg-col-light);
+    text-shadow: var(--fg-col-dark) 3px 3px 10px;
+    border-radius: 6px;
+    box-shadow: #aaa 10px 10px 25px;
+}
+
+.hide {
+    display: none;
+}
+
+#details figure,
+#details h1 {
+    margin: 0;
+}
+
+#details h1 {
+    grid-column: span 4;
+    font-size: 4rem;
+}
+
+#details figure {
+    grid-row: span 5;
+    max-width: 300px;
+}
+
+#details figure img {
+    width: 100%;
+}
+
+#details figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
+#details-house-crest {
+    grid-row: span 2;
+    grid-column: span 2;
+
+    width: 100%;
+}
+
+#details-house-name {
+    margin: 0;
+    font-size: 5rem;
+    transform: translate(0,20%); 
+}
+
+#details-hogwarts-status {
+    margin: 0 1em;
+    font-style: italic;
+    align-self: center;
+}
+
+#details-species {
+    grid-column: 3 / span 2;
+    font-size: 2rem;
+}
+
+#details-wand-image {
+    
+}
+
+#details-wand-image img {
+    height: 7rem;
+}
+
+#details-wand {
+    grid-column: span 2;
+}
+
+#details-wand dl {
+    margin: 0;
+}
+
+#details-wand dt {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+#details-wand dd {
+    font-size: 1.2rem;
+}
+
+#details-birthday {
+    grid-column: 3 / span 2;
+    font-size: 1.2rem;
+}
+
+/* Character grid */
+#character-grid {
+    
+margin-left: 15vw;
+
+}
+
+#character-grid .character {
+    max-width: 70vw;
+    border: 2px solid black;
+    padding: 3px;
+    display: grid;
+    grid-template-columns: 3rem 20rem 5rem;
+    align-items: center;
+    gap: 1rem;
+    margin-block-end: 1rem;
+    background-color: var(--bg-col-light);
+    color: var(--fg-col-light);
+    cursor: pointer;
+}
+
+#character-grid .character img {
+    width: 100%;
+}
+
+#character-grid .character h2,
+#character-grid .character p {
+    margin: 0;
+}
