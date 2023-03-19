@@ -87,11 +87,25 @@ function displayDetails(character) {
     age--;
   }
   document.querySelector("#details-birthday .age").textContent = age;
+
+  // show dialog
+  const dialog = document.querySelector("dialog");
+  // set theme
+  dialog.dataset.theme = character.house.toLowerCase();
+  dialog.showModal();
 }
 
 function displayCharacter(character) {
   const grid = document.querySelector("#character-grid");
   grid.insertAdjacentHTML("beforeend", getCharacterHTML(character));
+
+  // select the one we just added
+  const element = document.querySelector("#character-grid article:last-child");
+  element.addEventListener("click", clickOnCharacter);
+
+  function clickOnCharacter() {
+    displayDetails(character);
+  }
 }
 
 function getCharacterHTML(character) {
