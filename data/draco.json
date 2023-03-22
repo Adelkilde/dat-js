@@ -1,0 +1,18 @@
+{
+    "name": "Draco Malfoy",
+    "species": "human",
+    "gender": "male",
+    "house": "Slytherin",
+    "dateOfBirth": "05-06-1980",
+    "yearOfBirth": 1980,
+    "ancestry": "pure-blood",
+    "eyeColour": "grey",
+    "hairColour": "blonde",
+    "wand": "hawthorn,unicorn tail-hair,10",
+    "patronus": "",
+    "hogwartsStudent": true,
+    "hogwartsStaff": false,
+    "actor": "Tom Felton",
+    "alive": true,
+    "image": "http://hp-api.herokuapp.com/images/draco.jpg"
+}
