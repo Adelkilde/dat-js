@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>05-data</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>05-data</h1>
-</body>
+    <ul>
+      <li>V1 data: <a href="southpark.json">southpark.json</a></li>
+      <li>V2 data: <a href="pokemons.json">pokemons.json</a></li>
+    </ul>
 
+    <h2>V1 - South Park</h2>
+    <p>"schema" datamodel</p>
+    <ul>
+      <li><strong>name</strong>: tekst</li>
+      <li><strong>nickname</strong>: tekst</li>
+      <li><strong>image</strong>: url</li>
+      <li><strong>occupation</strong>: tekst (student, teacher, etc.)</li>
+      <li><strong>age</strong>: number</li>
+      <li><strong>voicedBy</strong>: tekst</li>
+      <li><strong>gender</strong>: tekst: male, female, …</li>
+      <li><strong>religion</strong>: tekst: jewich, christian, scientology, ...</li>
+      <li><strong>catchPhrase</strong>: tekst</li>
+      <li><strong>hairColor</strong>: tekst</li>
+      <li><strong>schoolGrade</strong>: tal 1-10</li>
+      <li><strong>episodes</strong>: tekst, med kommasepareret liste af fx S01E01, S01E04, S04E11, .. eller undefined</li>
+      <li><strong>appearances</strong>: tal</li>
+      <li><strong>firstAppearance</strong>: tekst, episode id, som “S01E01”</li>
+    </ul>
+    <hr />
+    <h2>V2 - Pokemon</h2>
+    <p>"Schema" datamodel</p>
+    <ul>
+      <li><strong>name</strong>: tekst</li>
+      <li><strong>description</strong>: tekst</li>
+      <li><strong>ability</strong>: tekst</li>
+      <li><strong>image</strong>: url</li>
+      <li><strong>footprint</strong>: url (til et andet billede)</li>
+      <li><strong>dexindex</strong>: tal</li>
+      <li><strong>type</strong>: tekst – begrænset til: fire, ice, flying, etc …</li>
+      <li><strong>subtype</strong>: tekst</li>
+      <li><strong>weaknesses</strong>: tekst – en kommasepareret liste over types</li>
+      <li><strong>gender</strong>: tekst: male eller female</li>
+      <li><strong>weight</strong>: tal – vægt i gram</li>
+      <li><strong>height</strong>: tal – højde i cm</li>
+      <li><strong>generation</strong>: tal</li>
+      <li><strong>spilversion</strong>: tekst</li>
+      <li><strong>canEvolve</strong>: boolean</li>
+      <li><strong>statsHP</strong>: tal 0-10</li>
+      <li><strong>statsAttack</strong>: tal 0-10</li>
+      <li><strong>statsDefence</strong>: tal 0-10</li>
+      <li><strong>statsSpecialAttack</strong>: tal 0-10</li>
+      <li><strong>statsSpecialDefence</strong>: tal 0-10</li>
+      <li><strong>statsSpeed</strong>: 0-10</li>
+    </ul>
+    <hr />
+  </body>
 </html>
