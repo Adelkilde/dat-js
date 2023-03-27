@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "properties": {
+      "name": { "type": "string" },
+      "nickname": { "type": ["string","null"] },
+      "image": { "type": "string" },
+      "occupation": { "type": "string" },
+      "age": { "type": ["number", "null"] },
+      "voicedBy": { "type": ["string","null"] },
+      "gender": { "type": ["string","null"] },
+      "religion": { "type": ["string","null"] },
+      "catchPhrase": { "type": ["string","null"] },
+      "hairColor": { "type": "string" },
+      "schoolGrade": { "type": ["number", "null"] },
+      "episodes": { "type": "string" },
+      "appearances": { "type": "number" },
+      "firstAppearance": { "type": "string" }
+      },
+      "required": ["name", "image", "episodes", "appearances", "firstAppearance"],
+      "additionalProperties": false
+  }
+  

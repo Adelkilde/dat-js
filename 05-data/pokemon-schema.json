@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "properties": {
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "ability": { "type": "string" },
+    "image": { "type": "string" },
+    "footprint": { "type": ["string","null"] },
+    "dexindex": { "type": "number", "description": "Skal være med lille i, og skal være et tal" },
+    "type": { "type": "string" },
+    "subtype": { "type": ["string","null"] },
+    "weaknesses": { "type": "string" },
+    "gender": { "type": ["string","null"] },
+    "weight": { "type": "number", "description": "weight in grams" },
+    "height": { "type": "number", "description": "height in cm" },
+    "generation": { "type": ["number", "null"] },
+    "spilversion": { "type": "string" },
+    "canEvolve": { "type": "boolean" },
+    "statsHP": { "type": "number" },
+    "statsAttack": { "type": "number" },
+    "statsDefence": { "type": "number" },
+    "statsSpecialAttack": { "type": "number" },
+    "statsSpecialDefence": { "type": "number" },
+    "statsSpeed": { "type": "number" }
+    },
+    "required": ["name", "description", "ability", "image", "dexindex", "type"],
+    "additionalProperties": false
+}

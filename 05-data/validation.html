@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validering af JSON</title>
+  </head>
+  <body>
+    <h1>Validering af JSON</h1>
+
+    <ul>
+      <li>Link til <a href="pokemon-schema.json">pokemon-schema.json</a></li>
+      <li>Link til <a href="southpark-schema.json">southpark-schema.json</a></li>
+    </ul>
+
+    <hr />
+
+    <p>
+      Du kan teste om din JSON lever op til den aftalte specifikation med en "JSON Schema Validator" som for eksempel denne <a href="https://www.jsonschemavalidator.net/">jsonschemavalidator.net/</a>.<br />
+      Den fungerer på den måde at du paster et "schema" (en særlig JSON-fil der indeholder specifikationen) i det venstre felt, og derefter paster dit eget JSON objekt ind i det højre.<br>
+      <strong>Åbn et af linksene øverst på denne side, og kopier json-koden (teksten) ind i det venstre felt.</strong>
+    </p>
+
+    <p>Fejlmeddelelserne er ikke specielt flinke, men du kan få at vide om en property har en forkert datatype, eller om du har skrevet dens navn forkert.</p>
+    <p>En forkert datatype fremstår som "Invalid type. Expected XXX but got YYY.</p>
+    <p>En fejlstavet property giver en eller to fejl:</p>
+    <ol>
+      <li>Property 'fejlstavet' has not been defined and the schema does not allow additional properties.</li>
+      <li>Required properties are missing from objekt: 'korrekt stavet'</li>
+    </ol>
+    <p>Det er ikke alle properties der er required, så fejl 2 kommer ikke altid. Vigtige properties som navn og billede er dog altid required</p>
+
+    <p>Her er et eksempel på et resultat af en validering.</p>
+
+    <picture>
+      <img src="json-validator-example.png" alt="" />
+      <caption>
+        Eksempel på JSON validatoren med fejlmeldinger.
+      </caption>
+    </picture>
+  </body>
+</html>
