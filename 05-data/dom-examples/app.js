@@ -10,5 +10,5 @@ const html = /*html*/ `<h1>Hi, again!</h1>`;
 document.querySelector("body").insertAdjacentHTML("beforeend", html);
 
 // .textContent - you must have a h1 element in your html
-const title = "Hi, again, again!";
-document.querySelector("h1").textContent = title;
+const titleText = "Hi, again, again!";
+document.querySelector("h1").textContent = titleText;
