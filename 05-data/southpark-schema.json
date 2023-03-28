@@ -12,7 +12,7 @@
       "catchPhrase": { "type": ["string","null"] },
       "hairColor": { "type": "string" },
       "schoolGrade": { "type": ["number", "null"] },
-      "episodes": { "type": "string" },
+      "episodes": { "type": ["string","null"] },
       "appearances": { "type": "number" },
       "firstAppearance": { "type": "string" }
       },
