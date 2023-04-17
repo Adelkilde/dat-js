@@ -14,6 +14,7 @@ async function getPosts() {
     const data = await res.json();
     const posts = preparePostData(data);
     // const posts = Object.keys(data).map(key => ({ id: key, ...data[key] })); // from object to array
+    console.log(posts);
     return posts;
 }
 
@@ -24,7 +25,5 @@ function preparePostData(dataObject) {
         post.id = key;
         postArray.push(post);
     }
-
-    console.log(postArray);
     return postArray;
 }
