@@ -13,6 +13,7 @@ async function getPosts() {
     const res = await fetch(`${endpoint}/posts.json`);
     const data = await res.json();
     const posts = preparePostData(data);
+    // const posts = Object.keys(data).map(key => ({ id: key, ...data[key] })); // from object to array
     return posts;
 }
 
