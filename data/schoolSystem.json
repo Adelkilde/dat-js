@@ -1,0 +1,76 @@
+{
+    "students": {
+        "s001": {
+            "name": "John Smith",
+            "email": "john.smith@email.com"
+        },
+        "s002": {
+            "name": "Emily Johnson",
+            "email": "emily.johnson@email.com"
+        },
+        "s003": {
+            "name": "David Lee",
+            "email": "david.lee@email.com"
+        },
+        "s004": {
+            "name": "Sarah Kim",
+            "email": "sarah.kim@email.com"
+        }
+    },
+    "teachers": {
+        "t001": {
+            "name": "Jane Smith",
+            "email": "jane.smith@email.com"
+        },
+        "t002": {
+            "name": "Bob Johnson",
+            "email": "bob.johnson@email.com"
+        },
+        "t003": {
+            "name": "Mark Lee",
+            "email": "mark.lee@email.com"
+        },
+        "t004": {
+            "name": "Julia Kim",
+            "email": "julia.kim@email.com"
+        }
+    },
+    "courses": {
+        "c001": {
+            "name": "Introduction to Computer Science",
+            "startDate": "2023-09-01",
+            "endDate": "2024-01-31",
+            "ectsPoints": 10,
+            "maxStudents": 50,
+            "teacher": "t004",
+            "students": ["s001", "s003", "s004"]
+        },
+        "c002": {
+            "name": "Web Development",
+            "startDate": "2023-09-01",
+            "endDate": "2024-01-31",
+            "ectsPoints": 10,
+            "maxStudents": 40,
+            "teacher": "t002",
+            "students": ["s002", "s003", "s004"]
+        },
+        "c003": {
+            "name": "Database Systems",
+            "startDate": "2024-02-01",
+            "endDate": "2024-06-30",
+            "ectsPoints": 10,
+            "maxStudents": 30,
+            "teacher": "t003",
+            "students": ["s001", "s003", "s002"]
+        },
+        "c004": {
+            "name": "Artificial Intelligence",
+            "startDate": "2024-02-01",
+            "endDate": "2024-06-30",
+            "ectsPoints": 10,
+            "maxStudents": 20,
+            "teacher": "t001",
+            "students": ["s001", "s002", "s003", "s004"]
+        }
+    }
+}
