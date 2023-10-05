@@ -1,0 +1,92 @@
+{
+    "cars": {
+        "-C1Abcdefg123": {
+            "make": "Toyota",
+            "model": "Camry",
+            "year": 2022,
+            "color": "Silver",
+            "uid": "ZfPTVEMQKf9vhNiUh0bj"
+        },
+        "-C1Xyz987pqr": {
+            "make": "Honda",
+            "model": "Civic",
+            "year": 2021,
+            "color": "Blue",
+            "uid": "fTs84KRoYw5pRZEWCq2Z"
+        },
+        "-C2Def456stu": {
+            "make": "Ford",
+            "model": "Mustang",
+            "year": 2023,
+            "color": "Red",
+            "uid": "fjpRTRTjZHwrq3tTLHri"
+        },
+        "-C3Ghi789vwx": {
+            "make": "Chevrolet",
+            "model": "Equinox",
+            "year": 2020,
+            "color": "Black",
+            "uid": "pqzGY1MnHYm3I4Ca79Xn"
+        },
+        "-C4Jkl012yzA": {
+            "make": "Nissan",
+            "model": "Altima",
+            "year": 2022,
+            "color": "White",
+            "uid": "HlvRHr58C05guOLl64k5"
+        },
+        "-C5Mno567pqr": {
+            "make": "Volkswagen (VW)",
+            "model": "Golf",
+            "year": 2022,
+            "color": "Gray",
+            "uid": "ZfPTVEMQKf9vhNiUh0bj"
+        },
+        "-C6Stu890vwx": {
+            "make": "Polestar",
+            "model": "2",
+            "year": 2023,
+            "color": "Silver",
+            "uid": "fTs84KRoYw5pRZEWCq2Z"
+        },
+        "-C7Vwx234yza": {
+            "make": "Tesla",
+            "model": "Model 3",
+            "year": 2022,
+            "color": "Midnight Silver",
+            "uid": "fjpRTRTjZHwrq3tTLHri"
+        }
+    },
+    "users": {
+        "ZfPTVEMQKf9vhNiUh0bj": {
+            "image": "https://www.baaa.dk/media/b5ahrlra/maria-louise-bendixen.jpg?anchor=center&mode=crop&width=800&height=450&rnd=132792921650330000&format=webp",
+            "mail": "mlbe@eaaa.dk",
+            "name": "Maria Louise Bendixen",
+            "title": "Senior Lecturer"
+        },
+        "fTs84KRoYw5pRZEWCq2Z": {
+            "image": "https://share.cederdorff.com/images/race.jpg",
+            "mail": "race@eaaa.dk",
+            "name": "Rasmus Cederdorff",
+            "title": "Senior Lecturer"
+        },
+        "fjpRTRTjZHwrq3tTLHri": {
+            "image": "https://www.baaa.dk/media/5buh1xeo/anne-kirketerp.jpg?anchor=center&mode=crop&width=800&height=450&rnd=132792921531600000&format=webp",
+            "mail": "anki@eaaa.dk",
+            "name": "Anne Kirketerp",
+            "title": "Head of Department"
+        },
+        "pqzGY1MnHYm3I4Ca79Xn": {
+            "image": "https://www.eaaa.dk/media/14qpfeq4/line-skjodt.jpg?width=800&height=450&rnd=133178433559770000",
+            "mail": "lskj@eaaa.dk",
+            "name": "Line Skjødt",
+            "title": "Senior Lecturer & Internship Coordinator"
+        },
+        "HlvRHr58C05guOLl64k5": {
+            "image": "https://www.eaaa.dk/media/bdojel41/dan-okkels-brendstrup.jpg?anchor=center&mode=crop&width=800&height=450&rnd=132792921559630000&format=webp",
+            "mail": "dob@eaaa.dk",
+            "name": "Dan Okkels Brendstrup",
+            "title": "Lecturer"
+        }
+    }
+}
